@@ -1,0 +1,30 @@
+{
+  "name": "dswa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "dswa_ui-install": "npm install --prefix dswa_ui",
+    "dswa_ui": "npm start --prefix dswa_ui",
+    "dev": "concurrently \"npm run server\" \"npm run dswa_ui\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "bcrypt": "^3.0.4",
+    "concurrently": "^4.1.0",
+    "config": "^3.0.1",
+    "express": "^4.16.4",
+    "express-device": "^0.4.2",
+    "ip": "^1.1.5",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.0",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.4.17",
+    "nodemailer": "^5.1.1",
+    "validator": "^10.11.0"
+  }
+}
